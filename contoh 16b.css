@@ -1,0 +1,229 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* BODY */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #eaf6ff;
+    color: #263238;
+    line-height: 1.7;
+}
+
+/* HEADER */
+.jumbotron {
+    background: linear-gradient(135deg, #0077b6, #00b4d8, #48cae4);
+    color: white;
+    text-align: center;
+    padding: 75px 20px;
+}
+
+.jumbotron h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.jumbotron h4 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.jumbotron p {
+    margin-top: 15px;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #023e8a;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #90e0ef;
+}
+
+/* MAIN */
+main {
+    display: flex;
+    gap: 25px;
+    padding: 30px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+/* CONTENT */
+#content {
+    flex: 3;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 80, 150, 0.12);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 80, 150, 0.2);
+}
+
+/* JUDUL */
+.card h2 {
+    color: #0077b6;
+    margin-bottom: 15px;
+    border-left: 5px solid #00b4d8;
+    padding-left: 12px;
+}
+
+.card h3 {
+    color: #023e8a;
+    margin-top: 15px;
+}
+
+/* GAMBAR WISATA */
+.featured-img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    transition: 0.4s;
+}
+
+.featured-img:hover {
+    transform: scale(1.02);
+}
+
+/* LIST */
+.card ul {
+    padding-left: 25px;
+    margin-top: 10px;
+}
+
+.card li {
+    margin-bottom: 5px;
+}
+
+/* ASIDE */
+aside {
+    flex: 1;
+}
+
+/* PROFILE */
+.profile {
+    text-align: center;
+    position: sticky;
+    top: 90px;
+}
+
+.profile h2 {
+    border: none;
+    padding: 0;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #00b4d8;
+    margin: 15px auto;
+}
+
+.profile figcaption {
+    font-weight: bold;
+    color: #0077b6;
+    font-size: 20px;
+}
+
+/* FOOTER */
+.footer {
+    background: linear-gradient(135deg, #023e8a, #0077b6);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.footer h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    list-style: none;
+    margin-top: 15px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #90e0ef;
+}
+
+/* RESPONSIVE HP */
+@media screen and (max-width: 768px) {
+
+    .jumbotron h1 {
+        font-size: 32px;
+    }
+
+    main {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .featured-img {
+        height: 220px;
+    }
+
+    .profile {
+        position: static;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+}
